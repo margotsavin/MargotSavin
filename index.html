@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='site'>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -11,23 +11,127 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="icon" type="image/png" href="./img/icon/icon.png">
 </head>
-<body>
+<body ng-controller='PortfolioController'>
 	
-	<div class="all">
+	<div class="all"  ng-controller='PanelController as panel'>
 
 		<div id="menu">
-			<span>Home</span>
-			<span>About</span>
-			<span>Portfolio</span>
-			<span>Contact</span>
+			<span ng-click="panel.selectTab(1)">Home</span>
+			<span ng-click="panel.selectTab(2)">About</span>
+			<span ng-click="panel.selectTab(3)">Portfolio</span>
+			<span ng-click="panel.selectTab(4)">Contact</span>
 		</div>
-		<div id='ms'>
-			<span>Margot Savin
-				<div id='ms-bor'></div>
-			</span>
+		
+		<div id='#container'>	
+			<div id='ms' ng-show="panel.isSelected(1)">
+				<span>Margot Savin
+					<div id='ms-bor'></div>
+				</span>
+			</div>
+			
+<!-------------- ABOUT -------------------------------->
 
+			<div id='about' ng-show='panel.isSelected(2)'>
+				
+					<div id='topAbout'>
+						<img src='./img/about/mega.jpg'> 
+						<div id='info'>             
+									First name: <b>Margot</b><br/>
+									Last name: <b>Savin</b><br/>
+									Date of Birth: <b>8.08.1989.</b><br/>                                               Place of Birth:  <b>Novi Sad</b><br/>
+									Moblie Phone: <b>061/148-60-72</b><br/>
+									E-mail: <b>margotsavin@gmail.com</b><br/>
+									Adress: <b>Djure Djakovića 25  21410  Futog</b><br/>
+						</div><br/>
+					</div>
+				<p>
+				<b>MY  PROFILE</b></b><br/> 
+            Responsible, maticulous, correct and reliable. Studied at Art Academy of Novi Sad – Graduate Artist.
+            Well organized with using my  specific skills and knowledge in realization my future goals.
+            Perspective, spremana za izvršavanje zadataka bez obzira na pritisak i ostale radne uslove
+            Willing to work on my future specialization.
+            Experienced in cooperating with people of different profiles.<br/>
+
+     EDUCATION-QUALIFICATIONS <br/>
+     High School of design „ Bogdan Šuput „ Novi Sad – Graphic design
+     Academy of Arts, Novi Sad - Guidance: Painter, class  2009.
+     English language course, good verbal and writing communication. Certificate of Europe Union      „Youthpass „ youth exchange.<br/>
+     Participated of artist colony 2006. year in Futog, humanitarian type<br/>
+     Group exhibition of paintings 2006. year Center Apolo; Novi Sad<br/>
+     Group exhibition 2007.year Graphic design in Militay museum of Novi Sad<br/>
+            Participated of artist colony 2008. year, Deronje<br/>
+            Group exhibition of paintings 2008. year<br/>
+            2010. year artist colony in Užicu<br/>
+            Group exhbition of paintings 2010. year in Užice<br/>
+            Group exhibition of photography 2011. Year in Novi Sad<br/>
+            Biennial world of student photography 2011. Year in Novi Sad<br/>
+            Biennial world of student photography 2012. Year in Novi Sad<br/>
+            Group exhibition of works/installation 2012. Year at „Museum of Contemporary Art “  in Novi Sad<br/>
+            Group exhibition of paintings 2013. Year at museum „Pavle Beljanski“ in Novi Sad<br/>
+            Participated in the project 2013. Year  EU to be a citizen ( graffiti and stencil art ) in Ljubljana, Slovenia<br/>
+            Group exhibition of paintings 2013. Year  Cultural associations  „Vitizop“ Ljubljana,    Slovenia<br/>
+            Independent exhibition of drawings 2013. Year  Cultural associatins „Vitizop“ Ljubljana, Slovenia<br/>
+      2013/2014. Year  participated in project and establishing associations  “ PUSHWAGNERART “ . <br/>Cooperation with norwey artist  Terje Brofos known on the world art scene as Hariton Pushwagner.<br/>
+      Group exhibition 2014. year Cultural center in Futog<br/>
+      Group exhibition illustration 2014. Year at  Master Centar – Fair of books, in Novi Sad<br/>
+      2014. Cooperation on project Dance Theater Performance by Teather Pozitiv “ The Third “ , Ljubljana / Novi Sad<br/>
+      Group exhibition of paintings 2014. Year in Ljubljana, Slovenia<br/>
+      Group exhibition of paintings 2015. Year  Cultural center in Futog<br/>
+
+       EXPERIENCE<br/>
+             2009. Year Volunteer work within MNRO organization, work with children that have special needs, at  Novo Naselje 1  year in Novi Sad.<br/>
+            Project 1. 2012.year interior at  «D cluba» Zmaj Jovina 28, Novi Sad.<br/>
+            Project 2. 2013. year exterior of garden caffee „Betula „ in  Novi Sad.<br/>
+            2013 / 2014. year work for norwey artist Pushwagner / Digital treatment of drawings.<br/>
+            2014 / 2015… year opens an alternative space “Creative nook  Drawin” school of arts for children and adults in Novom Sadu.<br/>
+
+
+             OTHER ABILITIES<br/>
+             Owning driving license B category.<br/>
+             Computer knowledge (MS Office, Photoshop, Coreldraw, Ilustrator, Internet...)
+
+				</p>
+			</div>
+
+<!----------------------- PORTFOLIO ------------------------>
+			<div id="portfolio" ng-show='panel.isSelected(3)'>
+				<div class="grid">
+
+				</div>
+			</div>
+
+<!------------------------- CONTACT ---------------------------->
+
+
+			<div id='contact' ng-show='panel.isSelected(4)'>
+				<form action="https://formspree.io/margotsavin@gmail.com" method="POST">
+					<span>Your Name </span><span style="color:red">*</span><br/>
+				    <input type="text" name="name"><br/>
+				    <span>Email </span><span style="color:red">*</span><br/>
+				    <input type="email" name="_replyto"><br/>
+				    <span>Message </span><span style="color:red">*</span><br/>
+				    <textarea name='message'></textarea><br/>
+				    <input class="sub" type="submit" value="Send">
+				    <input type="hidden" name="_next" value="//site.io/thanks.html" />
+				</form>
+
+				<span class='megaInfo'>
+				Margot Savin</br></br>  
+				margotsavin@gmail.com</br></br>
+				+3811486072</br></br>
+				<a href="https://www.facebook.com/profile.php?id=1622901291" target="_blank"><img src='./img/icon/facebook.png'></a><img src='./img/icon/twitter.png'><img src='./img/icon/linkedin.png'>
+				</span>
+			</div>
 		</div>
+			<div id='footer'>
+				
+			</div>
 	</div>
 
+
+
+
+	<script type="text/javascript" src='./js/angular.min.js'></script>
+	<script type="text/javascript" src='./js/app.js'></script>
 </body>
 </html>

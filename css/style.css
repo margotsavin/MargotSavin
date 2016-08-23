@@ -14,6 +14,7 @@ body
 {
 	background-color: rgb(149,30,36);
 	font-family: Caviar Dreams;
+	height: 100%;
 }
 
 .all 
@@ -21,12 +22,13 @@ body
 	margin-left: 20%;
 	margin-right: 20%;
 	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 /********************* MENU **************************/
 #menu 
 {
-	width: 500px;
+	width: 60%;
 	margin: 0 auto;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -60,7 +62,7 @@ body
 /*********MS******************/
 #ms
 {
-	width: 300px;
+	width: 35%;
 	margin: 0 auto;
 	margin-top: 10%;
 	font-family: Nova Bold;
@@ -71,10 +73,161 @@ body
 
 #ms-bor 
 {
-	width: 90px;
+	width: 35%;
 	height: 5px;
 	margin-left: 28%;
 	margin-top: 8%;
 	background-color: #fff;
 
 }
+
+/********************* ABOUT ************************/
+
+#about 
+{
+	width:80%;
+	margin:0 auto;
+	margin-top: 10%;
+	background-color: #fff;
+	padding: 3% 3% 3% 3%;
+	border-radius: 3px;
+}
+
+#about p
+{
+	font-family: Caviar Dreams;
+	font-size: 15px;
+	letter-spacing: 0.3px;
+	text-align: center;
+	
+}
+
+#topAbout img 
+{
+	height: 40%;
+	width: 40%;
+	border-radius: 50%;
+	
+}
+
+#info 
+{
+	font-family: Caviar Dreams;
+	float:right;
+	margin-top: 10%;
+}
+
+
+/*************************** PORTFOLIO **********************/
+#portfolio 
+{
+	width:80%;
+	margin:0 auto;
+	margin-top: 10%;
+	background-color: #fff;
+	padding: 3% 3% 3% 3%;
+	border-radius: 3px;
+}
+
+
+
+
+/*********************** CONTACT ****************************/
+
+#contact 
+{
+	width:80%;
+	height: 500px;
+	background-color: #fff;
+	padding: 3% 3% 3% 3%;
+	margin: 0 auto;
+	font-family: Caviar Dreams;
+	margin-top: 10%;
+	border-radius: 3px;
+}
+
+#contact form 
+{
+	float:left;
+	margin-top: 5%;
+	margin-right: 25%;
+}
+
+#contact input 
+{
+	width: 130%;
+	padding: 6px 10px;
+	background-color: rgb(191,191,191);
+	margin-top: 10%;
+	margin-bottom: 10%;
+	font-size: 15px;
+	font-family: Caviar Dreams;
+	border: none;
+	border-radius: 4px;
+	display: block;
+}
+
+#contact textarea 
+{
+	width: 150%;
+	height: 120px;
+	padding: 6px 10px;
+	background-color: rgb(191,191,191);
+	margin-top: 10%;
+	margin-bottom: 10%;
+	font-family: Caviar Dreams;
+	border: none;
+	border-radius: 4px;
+	display: block;
+}
+
+#contact textarea:focus, input:focus 
+{
+	outline:none;
+}
+
+#contact span 
+{
+	float:left;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+#contact .sub 
+{
+	display: block;
+	cursor: pointer;
+	padding:10px 10px;
+	width: 100%;
+	background-color: rgb(149,30,36);
+	text-transform: uppercase;
+	color:#fff;
+}
+
+#contact .megaInfo
+{
+	margin-top: 35%;
+
+}
+
+#contact .megaInfo img 
+{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+
+
+/******************* FOOTER ********************/
+
+#footer 
+{
+	clear: both;
+	position: relative;
+	z-index: 10;
+	height: 3em;
+	margin-top: -3em;
+}
+
