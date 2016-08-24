@@ -152,7 +152,7 @@ body
 	margin-top: 5%;
 	margin-right: 25%;
 }
-
+/*
 #contact input 
 {
 	width: 130%;
@@ -165,9 +165,9 @@ body
 	border: none;
 	border-radius: 4px;
 	display: block;
-}
+}*/
 
-#contact textarea 
+/*#contact textarea 
 {
 	width: 150%;
 	height: 120px;
@@ -209,7 +209,7 @@ body
 	margin-top: 35%;
 
 }
-
+*/
 #contact .megaInfo img 
 {
 	width: 30px;
