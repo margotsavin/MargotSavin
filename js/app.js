@@ -12,6 +12,7 @@ var app = angular.module('site', []);
 		this.isSelected= function(checkTab) {
 			return this.tab===checkTab;
 		}
+		
 	});
 
 	app.controller('PortfolioController', function() {

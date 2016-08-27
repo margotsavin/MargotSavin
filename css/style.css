@@ -12,14 +12,24 @@
 
 body 
 {
-	/*background-color: rgb(149,30,36);*/
-	background-image: url('../img/background/bg.jpg');
+	/*background-color: #ccc;*/
+	/**/
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	font-family: Caviar Dreams;
 	height: 1200px;
 	}
+
+.homePage 
+{
+	background-image: url('../img/background/bg.jpg');
+}
+
+.elsePage 
+{
+	background-color: white;
+}
 
 .all 
 {
@@ -40,7 +50,7 @@ body
 	float:none;
 }
 
-#menu span 
+.homePage #menu span 
 {
 	font-size: 13px;
 	color: #fff;
@@ -49,6 +59,21 @@ body
 	letter-spacing: 3px;
 	margin-right: 30px;
 	background: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.2) 50%);
+	background-repeat: no-repeat;
+    background-size: 202% 2px;
+    background-position: right bottom;
+    transition: opacity 0.2s ease-out, background-position 0.2s ease-out, color 0.3s 2.4s ease-out;
+}
+
+.elsePage #menu span 
+{
+	font-size: 13px;
+	color: rgb(0,0,0);
+	line-height: 26px;
+	display: inline-block;
+	letter-spacing: 3px;
+	margin-right: 30px;
+	background: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0.2) 50%);
 	background-repeat: no-repeat;
     background-size: 202% 2px;
     background-position: right bottom;
@@ -142,7 +167,7 @@ body
    -moz-box-shadow: 1px 1px 2px #e6e6e6;
    box-shadow: 1px 1px 2px #e6e6e6;
    cursor: default;
-   background: #ccc url(../images/bgimg.jpg) no-repeat center center;
+   background: #ccc no-repeat center center;
 }
 .view .mask,.view .content {
    width: 185px;
