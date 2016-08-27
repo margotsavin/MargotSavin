@@ -23,7 +23,8 @@ body
 
 .homePage 
 {
-	background-image: url('../img/background/bg.jpg');
+	/*background-image: url('../img/background/bg.jpg');*/
+	background-color: #ccc;	
 }
 
 .elsePage 
@@ -50,7 +51,7 @@ body
 	float:none;
 }
 
-.homePage #menu span 
+#menu span 
 {
 	font-size: 13px;
 	color: #fff;
@@ -79,6 +80,7 @@ body
     background-position: right bottom;
     transition: opacity 0.2s ease-out, background-position 0.2s ease-out, color 0.3s 2.4s ease-out;
 }
+
 
 #menu span:hover 
 {
@@ -119,9 +121,9 @@ body
 	width:80%;
 	margin:0 auto;
 	margin-top: 10%;
-	background-color: #fff;
-	padding: 3% 3% 3% 3%;
+	padding: 3%;
 	border-radius: 3px;
+
 }
 
 #about p
@@ -130,25 +132,59 @@ body
 	font-size: 15px;
 	letter-spacing: 0.3px;
 	text-align: center;
-	
 }
 
-#topAbout img 
+#about img 
 {
 	height: 40%;
 	width: 40%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;	
 	border-radius: 50%;
-	
+	margin-bottom: 5%;
 }
 
-#info 
+.info 
+{
+	text-align: center;
+}
+
+.info .ime
+{
+	font-family: Nova Bold;
+	font-size: 35px;
+	letter-spacing: 3px;
+	transform: uppercase;
+	margin:auto;
+}
+
+.info .job 
 {
 	font-family: Caviar Dreams;
-	float:right;
-	margin-top: 10%;
+	font-size: 20px;
+	margin: auto;
 }
 
+#text 
+{
+	margin-top: 5%;
+	font-family: Caviar Dreams;
+	font-size: 14px;
+}
 
+#text p 
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+#text .bold 
+{
+	font-size: 16px;
+	font-weight: bold;
+}
 /*************************** PORTFOLIO **********************/
 #portfolio
 {
@@ -163,9 +199,7 @@ body
    overflow: hidden;
    position: relative;
    text-align: center;
-   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
-   -moz-box-shadow: 1px 1px 2px #e6e6e6;
-   box-shadow: 1px 1px 2px #e6e6e6;
+  
    cursor: default;
    background: #ccc no-repeat center center;
 }
@@ -326,7 +360,7 @@ body
 {
 	width:80%;
 	height: 500px;
-	background-color: #fff;
+	background-color: #ccc;
 	padding: 3% 3% 3% 3%;
 	margin: 0 auto;
 	font-family: Caviar Dreams;
