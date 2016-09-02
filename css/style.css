@@ -24,7 +24,7 @@ body
 .homePage 
 {
 	background-image: url('../img/background/bg.jpg');
-	/*background-color: #ccc;	*/
+	/*background-color: #ccc;*/	
 	height: 1200px;
 }
 
@@ -41,7 +41,7 @@ body
 }
 
 /********************* MENU **************************/
-#menu 
+.menu 
 {
 	width: 100%;
 	margin: 0 auto;
@@ -53,7 +53,7 @@ body
 	float:none;
 }
 
-#menu span 
+.menu span 
 {
 	font-size: 13px;
 	color: #fff;
@@ -68,7 +68,7 @@ body
     transition: opacity 0.2s ease-out, background-position 0.2s ease-out, color 0.3s 2.4s ease-out;
 }
 
-.elsePage #menu span 
+.elsePage .menu span 
 {
 	font-size: 13px;
 	color: rgb(0,0,0);
@@ -83,8 +83,17 @@ body
     transition: opacity 0.2s ease-out, background-position 0.2s ease-out, color 0.3s 2.4s ease-out;
 }
 
+.menu .active 
+{
+   background-position: left bottom;
+}
 
-#menu span:hover 
+.elsePage .menu .active
+{
+   background-position: left bottom;
+}
+
+.menu span:hover 
 {
 	background-position: left bottom;
 	cursor: pointer;
@@ -378,6 +387,13 @@ body
 {
    max-width: 300px; 
    margin-top: 20px;
+   background-color:#ccc;
+   border: none;
+}
+
+#contact .form-control:focus 
+{
+   border:none;
 }
 
 #contact form 
@@ -386,6 +402,7 @@ body
    text-align: right;
 
 }
+
 
 #contact .megaInfo div
 {
@@ -404,13 +421,11 @@ body
 
 #contact .sub 
 {
-   height: 30px;
-   width: 80px;
-   background-color: #2BB5FF;
-   color: white;
-   text-transform: uppercase;
-   font-weight: 800;
-   font-size: 20px;
+   padding:5px 15px;
+   background-color: #ccc;
+   color: #000;
+   border-radius: 5px;
+   border:none;
 }
 
 
@@ -425,3 +440,16 @@ body
 	margin-top: -3em;
 }
 
+
+
+/**************** MOBILNI *******************/
+
+@media screen and (max-width:680px) {
+
+
+   .menu span 
+   {
+      width: 100%;
+      clear:both;
+   }
+}

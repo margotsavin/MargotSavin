@@ -17,11 +17,11 @@
 	
 	<div class="all container"  >
 
-		<div id="menu">
-			<span ng-click="panel.selectTab(1)">Home</span>
-			<span ng-click="panel.selectTab(2)">About</span>
-			<span ng-click="panel.selectTab(3)">Portfolio</span>
-			<span ng-click="panel.selectTab(4)">Contact</span>
+		<div class="menu">
+			<span ng-click="panel.selectTab(1)" ng-class="{active: panel.isSelected(1)}">Home</span>
+			<span ng-click="panel.selectTab(2)" ng-class="{active: panel.isSelected(2)}">About</span>
+			<span ng-click="panel.selectTab(3)" ng-class="{active: panel.isSelected(3)}">Portfolio</span>
+			<span ng-click="panel.selectTab(4)" ng-class="{active: panel.isSelected(4)}">Contact</span>
 		</div>
 		
 		<div id='#container'>	
@@ -141,7 +141,7 @@
 					    <span>Message </span><span style="color:red">*</span><br/>
 					    <textarea class="form-control" name='message'></textarea><br/>
 				    </div>
-				    <input class="sub" type="submit" value="Send">
+				    <input class="sub" type="submit" value="Send Message">
 				    <input type="hidden" name="_next" value="//site.io/thanks.html" />
 				</form>
 
