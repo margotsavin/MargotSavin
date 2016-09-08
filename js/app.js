@@ -2,7 +2,7 @@
 
 var app = angular.module('site', []);
 
-	app.controller("PanelController", function() {
+	app.controller("PanelController", function($scope) {
 		this.tab=1;
 
 		this.selectTab= function(setTab){ 
@@ -11,13 +11,35 @@ var app = angular.module('site', []);
 
 		this.isSelected= function(checkTab) {
 			return this.tab===checkTab;
-		}
-		
+		};
+
+		$scope.home = "home.html"
+		$scope.about = "about.html";
+		$scope.portfolio= "portfolio.html";
+		$scope.contact = "contact.html";
+
 	});
 
 	app.controller('PortfolioController', function() {
 		this.projekti= projekti;
 	});
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////// PROJEKTI /////////////////////////////
+
+
+
+
 
 
 	var projekti = [

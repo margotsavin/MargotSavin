@@ -99,6 +99,11 @@ body
 	cursor: pointer;
 }
 
+#container
+{
+	margin-top: 10%;
+}
+
 /*********MS******************/
 #ms
 {
