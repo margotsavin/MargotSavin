@@ -394,9 +394,6 @@ body
    background-color: #000;
    opacity: 0.5;
    height: 2px;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-    background-position: center; 
 }
 
 #singlebutton
