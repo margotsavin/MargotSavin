@@ -38,6 +38,7 @@ var app = angular.module('site', []);
 		this.ilustracije=ilustracije;
 		this.animacije=animacije;
 
+		$scope.viewProjekti ="projekti.html";
 		$scope.viewSlike= "slike.html";
 		$scope.viewGrafike= "grafike.html";
 		$scope.viewIlustracije = "ilustracije.html";
