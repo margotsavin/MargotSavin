@@ -205,6 +205,7 @@ body
 #portfolio
 {
 	margin-top: 5%;
+   width: 100%;
 }
 .view {
    width: 185px;
@@ -267,6 +268,8 @@ body
    -webkit-box-shadow: 0 0 5px #000;
    -moz-box-shadow: 0 0 5px #000;
    box-shadow: 0 0 5px #000;
+   display: block;
+   cursor: pointer;
 }
 
 .view-tenth img {
@@ -368,6 +371,32 @@ body
    opacity: 1;
 }
 
+
+
+.naslovPortfolio
+{
+   width: 100%;
+   margin: 0 auto;
+   margin-bottom: 30px;
+   font-family: Caviar Dreams;
+   color:#000;
+   letter-spacing: 5px;
+   font-size: 30px;
+   text-align: center;
+}
+
+.naslov-bor
+{
+
+   width: 100%;
+   margin:0 auto;
+   background-color: #000;
+   opacity: 0.5;
+   height: 2px;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+    background-position: center; 
+}
 
 				
 /*********************** CONTACT ****************************/

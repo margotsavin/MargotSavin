@@ -1,13 +1,18 @@
 
 <div ng-controller="PortfolioController as portfolio" class="container" id="portfolio" ng-show='panel.isSelected(3)'>
-				<div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="projekat in portfolio.projekti">
+				<div class="col-md-3 col-sm-6 col-xs-12" ng-show="portfolio.isSelected(0)" ng-repeat="projekat in portfolio.projekti">
 					<div class="view view-tenth">
-						<img ng-src="{{projekat.slike[0].jpg}}" >
+						<img ng-src="{{projekat.slika.jpg}}" />
 						<div class="mask">
 	                        <h2>{{projekat.nazivProjekta}}</h2>
 	                        <p>{{projekat.opisProjekta}}</p>
-	                        <a href="#" class="info">Galerija</a>
+	                        <a href="" ng-click= "portfolio.selectTab(projekat.redBr)" class="info">Galerija</a>
 	                    </div>
                 	</div>
-				</div>
+                </div>	
+                	<div ng-if="portfolio.isSelected(1)" ng-include="viewSlike"></div>
+					<div ng-if="portfolio.isSelected(2)" ng-include="viewGrafike"></div>
+					<div ng-if="portfolio.isSelected(3)" ng-include="viewIlustracije"></div>
+					<div ng-if="portfolio.isSelected(4)" ng-include="viewAnimacije"></div>
+				
 			</div> 

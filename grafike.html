@@ -1,0 +1,18 @@
+<div ng-show="portfolio.isSelected(2)">
+<div class='naslovPortfolio'>
+				<span>Graphics
+					<div class='naslov-bor'></div>
+				</span>
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="grafika in portfolio.grafike">
+					<div class="view view-tenth">
+						<img ng-src="{{grafika.slike[0].jpg}}" />
+						<div class="mask">
+	                        <h2>{{grafika.nazivProjekta}}</h2>
+	                        <p>{{grafika.opisProjekta}}</p>
+	                        <a href="" class="info">Gallery</span>
+	                    </div>
+                	</div>
+				</div>
+</div>
