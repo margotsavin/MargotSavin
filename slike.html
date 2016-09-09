@@ -1,13 +1,13 @@
 <div ng-show="portfolio.isSelected(1)">
-<div class='naslovPortfolio'>
-				<span>
-					<div class='naslov-bor'></div>
-					Slike
-					<div class='naslov-bor'></div>
-				</span>
-</div>
+				<div class='naslovPortfolio'>
+								<span>
+									<div class='naslov-bor'></div>
+									Slike
+									<div class='naslov-bor'></div>
+								</span>
+				</div>
 
-<div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="slika in portfolio.slike">
+				<div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="slika in portfolio.slike">
 					<div class="view view-tenth">
 						<img ng-src="{{slika.slike[0].jpg}}" />
 						<div class="mask">
@@ -18,4 +18,9 @@
                 	</div>
 				</div>
 
+				<div class="col-md-12 text-center"> 
+					<button id="singlebutton" name="singlebutton" class="btn btn-primary" ng-click="portfolio.selectTab(0)">
+					<img src="./img/icon/arrow.png"/>Nazad
+					</button> 
+				</div>
 </div>

@@ -377,12 +377,13 @@ body
 {
    width: 100%;
    margin: 0 auto;
-   margin-bottom: 30px;
+   margin-bottom: 60px;
    font-family: Caviar Dreams;
    color:#000;
    letter-spacing: 5px;
    font-size: 30px;
    text-align: center;
+   text-transform: uppercase;
 }
 
 .naslov-bor
@@ -396,6 +397,30 @@ body
    background-repeat: no-repeat;
    background-attachment: fixed;
     background-position: center; 
+}
+
+#singlebutton
+{
+   background-color: #000;
+   color:#fff;
+   opacity: 0.8;
+   text-transform: uppercase;
+   padding: 10 15px;
+   border:none;
+   border-radius: 3px;
+   line-height: 20px;
+}
+
+#singlebutton img 
+{
+   width: 20px;
+   height: 20px;
+   margin-right: 5px;
+}
+
+#singlebutton:hover 
+{
+   opacity: 1;
 }
 
 				
