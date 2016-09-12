@@ -420,6 +420,31 @@ body
    opacity: 1;
 }
 
+
+
+
+/**GALERIJA PRIKAZ**/
+.galerija {
+   width: 185px;
+   height: 270px;
+   margin: 10px;
+   float: left;
+   border: 10px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+  
+   cursor: default;
+   background: #ccc no-repeat center center;
+}
+
+.galerija img {
+   display: block;
+   position: relative;
+   width: 185px;
+   height: 270px;
+}
+
 				
 /*********************** CONTACT ****************************/
 

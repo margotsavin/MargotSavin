@@ -22,7 +22,10 @@ var app = angular.module('site', []);
 
 	app.controller('PortfolioController', function($scope) {
 		this.tab=0;
-		this.currentGallery=0;
+		this.currentGallery=100;
+		this.currentProject=0;
+
+		
 
 		this.selectTab= function(setTab){ 
 			this.tab=setTab;
@@ -33,12 +36,23 @@ var app = angular.module('site', []);
 			return this.tab===checkTab;
 		};
 
+		this.selectProject = function(setTab) {
+			this.currentProject = setTab; 
+		};
+
+		this.isSelectedProject = function(checkTab) {
+			return this.currentProject === checkTab;
+		};
+
 		this.selectGallery= function(setTab){ 
 			this.currentGallery=setTab;
 		};
 
 		this.isSelectedGallery= function(checkTab) {
 			console.log(this.tab + "g");
+			if (checkTab === 100) {
+				return false;
+			}
 			return this.currentGallery===checkTab;
 		};
 
@@ -46,9 +60,9 @@ var app = angular.module('site', []);
 
 
 		this.projekti=projekti;
-		this.slike= slike;
-		this.crtezi= crtezi;
-		this.ilustracije=ilustracije;
+		this.paintings= paintings;
+		this.drawings= crtezi;
+		this.illustrations=ilustracije;
 		this.karakteri=karakteri;
 
 		$scope.viewProjekti ="projekti.html";
@@ -79,7 +93,7 @@ var projekti = [
 		slika: 
 		{
 			naziv:'medved',
-			jpg:'./img/portfolio/1.jpg'
+			jpg:'./img/portfolio/slike/polaCovek/a1.jpg'
 		}
 	},
 	{
@@ -89,7 +103,7 @@ var projekti = [
 		slika: 
 		{
 			naziv:'medved',
-			jpg:'./img/portfolio/1.jpg'
+			jpg:'./img/portfolio/crtezi/animals/a11.jpg'
 		}
 	},
 	{
@@ -124,59 +138,91 @@ var projekti = [
 
 var crtezi = [
 	{
-		nazivProjekta:'Slike',
+		nazivProjekta:'Animals',
 		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. N ',
 		slike: [
 			{
 				naziv:'medved',
-				jpg:'./img/portfolio/1.jpg'
+				jpg:'./img/portfolio/crtezi/animals/a11.jpg'
 			},
 			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/2.jpg'
-			}
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/animals/a2.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/animals/a3.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/animals/a4.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/animals/a5.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/animals/a6.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/animals/a7.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/animals/a8.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/animals/a9.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/animals/a10.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/animals/a1.jpg'
+			},
 		]
 	},
 	{
-		nazivProjekta:'Proba2',
+		nazivProjekta:'Intervention',
 		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id purus justo. ',
 		slike: [
 			{
 				naziv:'medved',
-				jpg:'./img/portfolio/2.jpg'
+				jpg:'./img/portfolio/crtezi/intervention/a4.jpg'
 			},
-			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/1.jpg'
-			}
-		]
-	},
-	{
-		nazivProjekta:'Proba3',
-		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id purus justo.  ',
-		slike: [
 			{
 				naziv:'medved',
-				jpg:'./img/portfolio/3.jpg'
+				jpg:'./img/portfolio/crtezi/intervention/a2.jpg'
 			},
-			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/2.jpg'
-			}
-		]
-	},
-	{
-		nazivProjekta:'Proba4',
-		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium enim at purus. ',
-		slike: [
 			{
 				naziv:'medved',
-				jpg:'./img/portfolio/1.jpg'
+				jpg:'./img/portfolio/crtezi/intervention/a3.jpg'
 			},
 			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/2.jpg'
-			}
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/intervention/a1.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/intervention/a5.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/intervention/a6.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/intervention/a7.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/intervention/a8.jpg'
+			},
 		]
 	},
 
@@ -186,9 +232,8 @@ var crtezi = [
 
 /////////////////////////////////////// SLIKE ///////////////////////////////////////////////
 
-	var slike = [
+	var paintings = [
 	{
-		redBr:11,
 		nazivProjekta:'Animals',
 		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. N ',
 		slike: [
