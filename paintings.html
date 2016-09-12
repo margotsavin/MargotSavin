@@ -1,0 +1,40 @@
+<div >
+	
+
+				<div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="slika in portfolio.slike" ng-show="portfolio.isSelected(1)">
+					<div class="view view-tenth">
+						<img ng-src="{{slika.slike[0].jpg}}" />
+						<div class="mask">
+	                        <h2>{{slika.nazivProjekta}}</h2>
+	                        <p>{{slika.opisProjekta}}</p>
+	                        <a href="" ng-click="portfolio.selectGallery(slika.redBr); portfolio.selectTab(100)" class="info">Gallery</a>
+	                    </div>
+                	</div>
+				</div>
+
+				<div class="col-md-12 col-sm-12 col-xs-12 text-center"> 
+					<button id="singlebutton" name="singlebutton" class="btn btn-primary" ng-click="portfolio.selectTab(0)">
+					<img src="./img/icon/arrow.png"/>Go Back
+					</button> 
+				</div>
+
+
+			<div ng-show="portfolio.isSelectedGallery(11)">
+
+				<div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="slika in portfolio.slike[0].slike">
+					<div class="">
+						<img ng-src="{{slika.jpg}}" />
+                	</div>
+				</div>
+
+				<div class="col-md-12 col-sm-12 col-xs-12 text-center"> 
+					<button id="singlebutton" name="singlebutton" class="btn btn-primary" ng-click="portfolio.selectTab(1)">
+					<img src="./img/icon/arrow.png"/>Go Back
+					</button> 
+				</div>
+			</div>
+
+</div>
+
+
+

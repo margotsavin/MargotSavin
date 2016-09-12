@@ -22,6 +22,7 @@ var app = angular.module('site', []);
 
 	app.controller('PortfolioController', function($scope) {
 		this.tab=0;
+		this.currentGallery=0;
 
 		this.selectTab= function(setTab){ 
 			this.tab=setTab;
@@ -32,20 +33,32 @@ var app = angular.module('site', []);
 			return this.tab===checkTab;
 		};
 
+		this.selectGallery= function(setTab){ 
+			this.currentGallery=setTab;
+		};
+
+		this.isSelectedGallery= function(checkTab) {
+			console.log(this.tab + "g");
+			return this.currentGallery===checkTab;
+		};
+
+
+
+
 		this.projekti=projekti;
 		this.slike= slike;
-		this.grafike= grafike;
+		this.crtezi= crtezi;
 		this.ilustracije=ilustracije;
-		this.animacije=animacije;
+		this.karakteri=karakteri;
 
 		$scope.viewProjekti ="projekti.html";
-		$scope.viewSlike= "slike.html";
-		$scope.viewGrafike= "grafike.html";
-		$scope.viewIlustracije = "ilustracije.html";
-		$scope.viewAnimacije = "animacije.html";
+		$scope.viewSlike= "paintings.html";
+		$scope.viewCrtezi= "drawings.html";
+		$scope.viewIlustracije = "illustrations.html";
+		$scope.viewKarakteri = "character.html";
 	});
 
-
+ 
 
 
 
@@ -61,7 +74,7 @@ var app = angular.module('site', []);
 var projekti = [
 	{
 		redBr:1,
-		nazivProjekta:'Slike',
+		nazivProjekta:'Paintings',
 		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. N ',
 		slika: 
 		{
@@ -71,7 +84,7 @@ var projekti = [
 	},
 	{
 		redBr:2,
-		nazivProjekta:'Grafike',
+		nazivProjekta:'Drawings',
 		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id purus justo. ',
 		slika: 
 		{
@@ -81,7 +94,7 @@ var projekti = [
 	},
 	{
 		redBr:3,
-		nazivProjekta:'Ilustracije',
+		nazivProjekta:'Illustrations',
 		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id purus justo.  ',
 		slika: 
 		{
@@ -91,7 +104,7 @@ var projekti = [
 	},
 	{
 		redBr:4,
-		nazivProjekta:'Animacije',
+		nazivProjekta:'Character Art',
 		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium enim at purus. ',
 		slika: 
 		{
@@ -109,7 +122,7 @@ var projekti = [
 ///////////////////////////////// GRAFIKE ////////////////////////////////////////////////////
 
 
-var grafike = [
+var crtezi = [
 	{
 		nazivProjekta:'Slike',
 		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. N ',
@@ -175,17 +188,46 @@ var grafike = [
 
 	var slike = [
 	{
-		nazivProjekta:'Slike',
+		redBr:11,
+		nazivProjekta:'Animals',
 		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. N ',
 		slike: [
 			{
-				naziv:'medved',
-				jpg:'./img/portfolio/1.jpg'
+				naziv:'wolf',
+				jpg:'./img/portfolio/slike/polaCovek/a1.jpg'
 			},
 			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/2.jpg'
-			}
+				naziv:'rhino',
+				jpg:'./img/portfolio/slike/polaCovek/a2.jpg'
+			},
+			{
+				naziv:'camil',
+				jpg:'./img/portfolio/slike/polaCovek/a3.jpg'
+			},
+			{
+				naziv:'owl',
+				jpg:'./img/portfolio/slike/polaCovek/a4.jpg'
+			},
+			{
+				naziv:'elephant',
+				jpg:'./img/portfolio/slike/polaCovek/a5.jpg'
+			},
+			{
+				naziv:'shark',
+				jpg:'./img/portfolio/slike/polaCovek/a6.jpg'
+			},
+			{
+				naziv:'bear',
+				jpg:'./img/portfolio/slike/polaCovek/a7.jpg'
+			},
+			{
+				naziv:'aligator',
+				jpg:'./img/portfolio/slike/polaCovek/a8.jpg'
+			},
+			{
+				naziv:'dolphin',
+				jpg:'./img/portfolio/slike/polaCovek/a9.jpg'
+			},
 		]
 	},
 	{
@@ -303,7 +345,7 @@ var ilustracije = [
 
 
 ///////////////////////////////////////// ANIMACIJE //////////////////////////////////////////////////////////
-var animacije = [
+var karakteri = [
 	{
 		nazivProjekta:'Slike',
 		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. N ',
