@@ -123,7 +123,7 @@ var projekti = [
 		slika: 
 		{
 			naziv:'medved',
-			jpg:'./img/portfolio/2.jpg'
+			jpg:'./img/portfolio/karakteri/1/a1.jpg'
 		}
 	},
 
@@ -133,7 +133,7 @@ var projekti = [
 
 
 
-///////////////////////////////// GRAFIKE ////////////////////////////////////////////////////
+///////////////////////////////// DRAWINGS ////////////////////////////////////////////////////
 
 
 var crtezi = [
@@ -225,6 +225,32 @@ var crtezi = [
 			},
 		]
 	},
+	{
+		nazivProjekta:'Ribice',
+		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. N ',
+		slike: [
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/ribice/a1.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/ribice/a2.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/ribice/a3.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/ribice/a4.jpg'
+			},
+			{
+				naziv:'medved',
+				jpg:'./img/portfolio/crtezi/ribice/a5.jpg'
+			},			
+		]
+	},
 
 	];
 
@@ -275,48 +301,7 @@ var crtezi = [
 			},
 		]
 	},
-	{
-		nazivProjekta:'Proba2',
-		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id purus justo. ',
-		slike: [
-			{
-				naziv:'medved',
-				jpg:'./img/portfolio/2.jpg'
-			},
-			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/1.jpg'
-			}
-		]
-	},
-	{
-		nazivProjekta:'Proba3',
-		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id purus justo.  ',
-		slike: [
-			{
-				naziv:'medved',
-				jpg:'./img/portfolio/3.jpg'
-			},
-			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/2.jpg'
-			}
-		]
-	},
-	{
-		nazivProjekta:'Proba4',
-		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium enim at purus. ',
-		slike: [
-			{
-				naziv:'medved',
-				jpg:'./img/portfolio/1.jpg'
-			},
-			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/2.jpg'
-			}
-		]
-	},
+	
 
 	];
 
@@ -328,63 +313,7 @@ var crtezi = [
 
 ///////////////////////////////////////ilustracije /////////////////////////////////////////////////
 var ilustracije = [
-	{
-		nazivProjekta:'Slike',
-		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. N ',
-		slike: [
-			{
-				naziv:'medved',
-				jpg:'./img/portfolio/1.jpg'
-			},
-			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/2.jpg'
-			}
-		]
-	},
-	{
-		nazivProjekta:'Proba2',
-		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id purus justo. ',
-		slike: [
-			{
-				naziv:'medved',
-				jpg:'./img/portfolio/2.jpg'
-			},
-			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/1.jpg'
-			}
-		]
-	},
-	{
-		nazivProjekta:'Proba3',
-		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id purus justo.  ',
-		slike: [
-			{
-				naziv:'medved',
-				jpg:'./img/portfolio/3.jpg'
-			},
-			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/2.jpg'
-			}
-		]
-	},
-	{
-		nazivProjekta:'Proba4',
-		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium enim at purus. ',
-		slike: [
-			{
-				naziv:'medved',
-				jpg:'./img/portfolio/1.jpg'
-			},
-			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/2.jpg'
-			}
-		]
-	},
-
+	
 	];
 
 
@@ -392,59 +321,45 @@ var ilustracije = [
 ///////////////////////////////////////// ANIMACIJE //////////////////////////////////////////////////////////
 var karakteri = [
 	{
-		nazivProjekta:'Slike',
+		nazivProjekta:'???',
 		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. N ',
 		slike: [
 			{
-				naziv:'medved',
-				jpg:'./img/portfolio/1.jpg'
+				naziv:'...',
+				jpg:'./img/portfolio/karakteri/1/a1.jpg'
 			},
 			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/2.jpg'
-			}
-		]
-	},
-	{
-		nazivProjekta:'Proba2',
-		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id purus justo. ',
-		slike: [
-			{
-				naziv:'medved',
-				jpg:'./img/portfolio/2.jpg'
+				naziv:'...',
+				jpg:'./img/portfolio/karakteri/1/a2.jpg'
 			},
 			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/1.jpg'
-			}
-		]
-	},
-	{
-		nazivProjekta:'Proba3',
-		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id purus justo.  ',
-		slike: [
-			{
-				naziv:'medved',
-				jpg:'./img/portfolio/3.jpg'
+				naziv:'...',
+				jpg:'./img/portfolio/karakteri/1/a3.jpg'
 			},
 			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/2.jpg'
-			}
-		]
-	},
-	{
-		nazivProjekta:'Proba4',
-		opisProjekta:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pretium enim at purus. ',
-		slike: [
-			{
-				naziv:'medved',
-				jpg:'./img/portfolio/1.jpg'
+				naziv:'...',
+				jpg:'./img/portfolio/karakteri/1/a4.jpg'
 			},
 			{
-				naziv:'vuk',
-				jpg:'./img/portfolio/2.jpg'
-			}
+				naziv:'...',
+				jpg:'./img/portfolio/karakteri/1/a5.jpg'
+			},
+			{
+				naziv:'...',
+				jpg:'./img/portfolio/karakteri/1/a6.jpg'
+			},
+			{
+				naziv:'...',
+				jpg:'./img/portfolio/karakteri/1/a7.jpg'
+			},
+			{
+				naziv:'...',
+				jpg:'./img/portfolio/karakteri/1/a8.jpg'
+			},
+			{
+				naziv:'...',
+				jpg:'./img/portfolio/karakteri/1/a9.jpg'
+			},
 		]
 	},
 

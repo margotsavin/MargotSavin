@@ -26,7 +26,7 @@
 
 				<div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="slika in portfolio.karakteri[portfolio.currentGallery].slike">
 					<div class="galerija">
-						<img ng-src="{{slika.jpg}}" />
+						<a class="fancybox" rel="gallery" href="{{slika.jpg}}" title="{{slika.naziv}}" alt=""><img ng-src="{{slika.jpg}}" /> </a>
                 	</div>
 				</div>
 
