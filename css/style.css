@@ -14,9 +14,7 @@ body
 {
 	/*background-color: #ccc;*/
 	/**/
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
+	
 	font-family: Caviar Dreams;
 	
 	}
@@ -25,7 +23,9 @@ body
 {
 	background-image: url('../img/background/bg.jpg');
 	/*background-color: #ccc;*/	
-	height: 1200px;
+	background-size: contain;
+   background-repeat: no-repeat;
+   padding-bottom: 75%;
 }
 
 .elsePage 
