@@ -23,7 +23,7 @@ body
 {
 	background-image: url('../img/background/bg.jpg');
 	/*background-color: #ccc;*/	
-	background-size: contain;
+	background-size: cover;
    background-repeat: no-repeat;
    padding-bottom: 75%;
 }
@@ -45,8 +45,8 @@ body
 {
 	width: 100%;
 	margin: 0 auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
 	text-align: center;
 	text-transform: uppercase;
 	clear: both;
