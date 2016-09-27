@@ -208,8 +208,8 @@ body
    width: 100%;
 }
 .view {
-   width: 185px;
-   height: 270px;
+   width: 270px;
+   height: 440px;
    margin: 10px;
    float: left;
    border: 10px solid #fff;
@@ -221,8 +221,8 @@ body
    background: #ccc no-repeat center center;
 }
 .view .mask,.view .content {
-   width: 185px;
-   height: 270px;
+   width: 270px;
+   height: 440px;
    position: absolute;
    overflow: hidden;
    top: 0;
@@ -231,8 +231,8 @@ body
 .view img {
    display: block;
    position: relative;
-   width: 185px;
-   height: 270px;
+   width: 270px;
+   height: 440px;
 }
 .view h2 {
    text-transform: uppercase;

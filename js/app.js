@@ -32,7 +32,6 @@ var app = angular.module('site', []);
 		};
 
 		this.isSelected= function(checkTab) {
-			console.log(this.tab);
 			return this.tab===checkTab;
 		};
 
@@ -49,7 +48,6 @@ var app = angular.module('site', []);
 		};
 
 		this.isSelectedGallery= function(checkTab) {
-			console.log(this.tab + "g");
 			if (checkTab === 100) {
 				return false;
 			}

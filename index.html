@@ -11,12 +11,13 @@
 
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="icon" type="image/png" href="./img/icon/icon.png">
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	 <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>  ONLINE -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script> <!-- LOKALNO --> 
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<!-- Add fancyBox -->
-	<link rel="stylesheet" href="./css/jquery.fancybox.css" type="text/css" media="screen" />
-	<script type="text/javascript" src="./js/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js"></script>
 
 </head>
 <body ng-controller='PanelController as panel' ng-class="{homePage: panel.isSelected(1), elsePage:!panel.isSelected(1)}">
